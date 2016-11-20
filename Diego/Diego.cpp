@@ -331,10 +331,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			HPEN hpenOld = static_cast<HPEN>(SelectObject(hdc, GetStockObject(DC_PEN)));
 			HBRUSH hbrushOld = static_cast<HBRUSH>(SelectObject(hdc, GetStockObject(NULL_BRUSH)));
 			RECT rect;
-			GetWindowRect(hWnd,&rect);
+			GetClientRect(hWnd,&rect);
 			SetDCPenColor(hdc, RGB(244, 191, 117));
-			Rectangle(hdc, 20, 10, rect.right - rect.left - 40, 155);
-			Rectangle(hdc, 20, 155, rect.right - rect.left - 40, 385);
+			Rectangle(hdc, 20, 10, rect.right - rect.left - 20, 155);
+			Rectangle(hdc, 20, 155, rect.right - rect.left - 20, rect.bottom-rect.top-20);
 			// TODO: Add any drawing code here...
 			EndPaint(hWnd, &ps);
 		}
