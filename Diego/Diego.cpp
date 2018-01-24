@@ -161,7 +161,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 	HWND hStatic2 = LambdaCreateWindow(WC_STATICW, L"Folder\t\xD83D\xDCC1:",
 									  WS_CHILD | WS_VISIBLE | SS_LEFT, 30, 100, 90, 27, nullptr);
 	HWND hStatic3 = LambdaCreateWindow(WC_STATICW, 
-									  L"\x263B \x2665 Copyright \x0A9 2016.Force Charlie.All Rights Reserved.",
+									  L"\x263B \x2665 Copyright \x0A9 2018, Force Charlie. All Rights Reserved.",
 									  WS_CHILD | WS_VISIBLE | SS_LEFT, 125, 345, 420, 27, nullptr);
 	HWND hUriEdit = LambdaCreateWindowEdge(WC_EDITW, L"", EDITBOXSTYLE, 125, 50, 420, 27, HMENU(IDC_PACKAGE_URI_EDIT));
 	HWND hDirEdit = LambdaCreateWindowEdge(WC_EDITW, L"", EDITBOXSTYLE, 125, 100, 420, 27, HMENU(IDC_FOLDER_URI_EDIT));
